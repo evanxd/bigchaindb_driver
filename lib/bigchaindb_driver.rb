@@ -1,5 +1,5 @@
 module BigchaindbDriver
-  require './bigchaindb_driver/connection'
-  require './bigchaindb_driver/transaction'
-  require './bigchaindb_driver/utils'
+  require File.dirname(__FILE__) + '/bigchaindb_driver/connection'
+  require File.dirname(__FILE__) + '/bigchaindb_driver/transaction'
+  require File.dirname(__FILE__) + '/bigchaindb_driver/utils'
 end
