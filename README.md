@@ -2,7 +2,7 @@
 A Ruby version of BigchainDB Driver.
 
 ## Examples
-### Commit a `CREATE` transaction
+### Add a `CREATE` transaction
 ```ruby
 require 'bigchaindb_driver'
 
