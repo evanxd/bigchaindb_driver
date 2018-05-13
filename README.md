@@ -13,8 +13,8 @@ driver.Transaction.create(
   asset: {
     bicycle: {
       model: 'CONTEND 1',
-      manufacturer: 'Giant Manufacturing Co. Ltd.',
-      country: 'Taiwan'
+      manufacturer: 'Giant',
+      country: 'Republic of China (Taiwan)'
     }
   },
   metadata: { what: 'Create my first asset in BigchainDB' },
