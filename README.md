@@ -9,9 +9,9 @@ require 'bigchaindb_driver'
 driver = BigchaindbDriver::Driver.new('https://test.bigchaindb.com/api/v1')
 ```
 
-### evanxd commits a `CREATE` transaction to create a bicycle asset
+### A owner commits a `CREATE` transaction to create a bicycle asset
 ```ruby
-evanxd = BigchaindbDriver::Utils.generate_keypair
+owner = BigchaindbDriver::Utils.generate_keypair
 driver.Transaction.create(
   asset: {
     bicycle: {
@@ -22,8 +22,8 @@ driver.Transaction.create(
   },
   metadata: { what: 'Create my first asset in BigchainDB' },
   action: 'CREATE',
-  public_key: evanxd.public_key,
-  private_key: evanxd.private_key
+  public_key: owner.public_key,
+  private_key: owner.private_key
 )
 ```
 
