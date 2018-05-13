@@ -18,7 +18,7 @@ driver.Transaction.create(
   },
   metadata: { what: 'Create my first asset in BigchainDB' },
   action: 'CREATE',
-  owner: alice.public_key,
+  public_key: alice.public_key,
   private_key: alice.private_key
 )
 ```
