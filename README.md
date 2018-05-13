@@ -6,7 +6,7 @@ A Ruby version of BigchainDB Driver.
 ```ruby
 require 'bigchaindb_driver'
 
-driver = BigchaindbDriver::Driver.new('http://bigchaindb-server.com')
+driver = BigchaindbDriver::Driver.new('https://test.bigchaindb.com/api/v1')
 ```
 
 ### evanxd commits a `CREATE` transaction to create a bicycle asset
