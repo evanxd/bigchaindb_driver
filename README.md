@@ -2,13 +2,16 @@
 A Ruby version of BigchainDB Driver.
 
 ## Examples
-### Commit a `CREATE` transaction to create an asset
+### Initialize a BigchainDB driver instance
 ```ruby
 require 'bigchaindb_driver'
 
 driver = BigchaindbDriver::Driver.new('http://bigchaindb-server.com')
+```
 
-alice = BigchaindbDriver::Utils.generate_keypair
+### evanxd commits a `CREATE` transaction to create a bicycle asset
+```ruby
+evanxd = BigchaindbDriver::Utils.generate_keypair
 driver.Transaction.create(
   asset: {
     bicycle: {
@@ -19,8 +22,8 @@ driver.Transaction.create(
   },
   metadata: { what: 'Create my first asset in BigchainDB' },
   action: 'CREATE',
-  public_key: alice.public_key,
-  private_key: alice.private_key
+  public_key: evanxd.public_key,
+  private_key: evanxd.private_key
 )
 ```
 
