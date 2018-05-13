@@ -27,6 +27,11 @@ driver.Transaction.create(
 )
 ```
 
+### View a transaction
+```ruby
+transaction = driver.Transaction.where(id: 'the_transaction_id').first
+```
+
 ### View an asset
 ```ruby
 asset = driver.Asset.where(keyword: 'Taiwan').first
